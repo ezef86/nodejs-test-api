@@ -38,7 +38,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/devops:${{ github.run_number }}
-          platforms: linux/amd64,linux/arm64,linux/arm/v7,windows/amd64
+          platforms: linux/amd64,linux/arm64
 
       # Log out from DockerHub
       - name: Log out from DockerHub
